@@ -1,4 +1,4 @@
--- SQL script that creates a stored procedure AddBonus
+-- SQL script that creates a stored procedure AddBonus.
 DELIMITER $$;
 CREATE PROCEDURE AddBonus(IN user_id INT, IN project_name VARCHAR(255), IN score INT)
 BEGIN
