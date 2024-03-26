@@ -8,7 +8,7 @@ stored in MongoDB
 def log_stats():
     """log stats of nginx"""
     client = MongoClient('mongodb://127.0.0.1:27017')
-    logCollection = client.logs.nginx
+    logsCollection = client.logs.nginx
     total = logsCollection.count_documents({})
     get = logsCollection.count_documents({"method": "GET"})
     post = logsCollection.count_documents({"method": "POST"})
