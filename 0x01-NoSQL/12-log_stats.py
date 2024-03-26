@@ -3,7 +3,7 @@
 A script that provides statas about some nginx logs
 stored in MongoDB
 """
-
+from pymongo import MongoClient
 
 def log_stats():
     """log stats of nginx"""
