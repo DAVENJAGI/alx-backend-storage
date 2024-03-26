@@ -9,7 +9,7 @@ def log_stats():
     """log stats of nginx"""
     client = MongoClient('mongodb://127.0.0.1:27017')
     logCollection = client.logs.nginx
-    total = logsiCollection.count_documents({})
+    total = logsCollection.count_documents({})
     get = logsCollection.count_documents({"method": "GET"})
     post = logsCollection.count_documents({"method": "POST"})
     put = logsCollection.count_documents({"method": "PUT"})
