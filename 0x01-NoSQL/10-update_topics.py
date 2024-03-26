@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Changes school document
+Changes school document based on the name
 """
 
 
