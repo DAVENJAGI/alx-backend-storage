@@ -5,6 +5,7 @@ stored in MongoDB
 """
 from pymongo import MongoClient
 
+
 def log_stats():
     """log stats of nginx"""
     client = MongoClient('mongodb://127.0.0.1:27017')
