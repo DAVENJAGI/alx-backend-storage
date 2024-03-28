@@ -14,7 +14,7 @@ class Cache:
         self.__redis = Redis()
         self.__redis.flushdb()
 
-    def store(self, data: str | bytes | int | float) -> str:
+    def store(self, data: [str, bytes, int, float]) -> str:
         '''generates a random key, stores the data in redis
         using random key and returns the key'''
 
