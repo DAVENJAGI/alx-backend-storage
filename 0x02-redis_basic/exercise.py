@@ -58,7 +58,7 @@ class Cache:
     def __init__(self) -> None:
         """ Initialize new cache object
         """
-        self._redis = Redis()
+        self._redis = redis.Redis()
         self._redis.flushdb()
 
     @call_history
