@@ -18,6 +18,6 @@ class Cache:
         '''generates a random key, stores the data in redis
         using random key and returns the key'''
 
-        key = str(uuid.uuid4())
-        self.__redis.mset({key: data})
+        key = str(uuid4())
+        self._redis.mset({key: data})
         return key
